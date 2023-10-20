@@ -1,0 +1,82 @@
+/* Welcome to the Stylish Playground! */
+body {
+  font-family: 'Comic Sans MS', cursive; /* Let's have a little fun with fonts! */
+  background-color: #ffcc00; /* A playful splash of yellow */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row; /* Change flex direction to stack elements */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* The Control Center - Where Magic Happens */
+.controls {
+  background-color: #f1f1f1; /* A touch of elegance */
+  border-radius: 15px; /* Rounded corners for a cozy feel */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add a subtle magic glow */
+  margin: 20px;
+  padding: 20px;
+  max-width: 400px; /* Limit the width on mobile screens */
+  width: 90%; /* Adjust the width as needed */
+}
+
+/* Buttons that Speak Volumes */
+button {
+  background-color: #ff5c5c; /* A fiery red to command attention */
+  color: #fff;
+  border: none;
+  border-radius: 10px; /* Softening the edges */
+  padding: 10px 20px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+/* Sliders: Unleash Your Imagination */
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Slider Setup: Handle with Care */
+.slider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Labeling with Flair */
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Slide, Glide, and Adjust */
+input[type="range"] {
+  width: 100%;
+}
+
+/* A Magical Transformation for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .controls {
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  /* Revert to default flex-direction for the controls on mobile */
+  body {
+    flex-direction: column;
+  }
+
+  /* Mobile-Ready Buttons */
+  button {
+    width: 100%;
+  }
+
+  /* Mobile-Ready Sliders */
+  input[type="range"] {
+    width: 100%;
+  }
+}
